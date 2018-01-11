@@ -1,0 +1,47 @@
+
+
+A564CVDF45DE7SQWEC
+TEST_ECC
+SAPD101
+SI_ContentFiles_oa
+com.sap.pi.java.mapping
+EO
+B2B_Ariba_T
+AribaD101
+
+
+Invoice_Number,Invoice_Date,Due_Date,Customer_Code,Customer_Reference,Line_Quantity,Line-Description,Line_Rate,Line_Charge_Type,Line_Vat_Amount,Line_Vat_Rate
+101,18/07/2011,28/07/2009,1,Customer 101 Invoice,2,Invoice line 1,2000,Sale of goods,0,0
+102,18/07/2011,29/07/2009,1,Customer 102 Invoice,2,Invoice line 1,2000.01,Sale of goods,0,0
+103,18/07/2011,30/07/2009,1,Customer 103 Invoice,2,Invoice line 1,2000.02,Sale of goods,0,0
+104,18/07/2011,31/07/2009,1,Customer 104 Invoice,2,Invoice line 1,2000.03,Sale of goods,0,0
+105,18/07/2011,28/07/2009,1,Customer 101 Invoice,2,Invoice line 1,2000,Sale of goods,0,0
+106,18/07/2011,29/07/2009,1,Customer 102 Invoice,2,Invoice line 1,2000.01,Sale of goods,0,0
+107,18/07/2011,30/07/2009,1,Customer 103 Invoice,2,Invoice line 1,2000.02,Sale of goods,0,0
+108,18/07/2011,31/07/2009,1,Customer 104 Invoice,2,Invoice line 1,2000.03,Sale of goods,0,0
+109,18/07/2011,28/07/2009,1,Customer 101 Invoice,2,Invoice line 1,2000,Sale of goods,0,0
+
+
+Order_Number,Order_Date,Status,Subtotal_Incl_Tax,Requested_Service,Shipping_Cost,Custom_1,Custom_2,Custom_3,Item_Name,Item_SKU,Item_Unit_Price,Item_Quantity,Item_Unit_Weight,Warehouse_Location,Full_Name,First_Name,Last_Name,Address_Line_1,Address_Line_2,City,State,Postal_Code,Country,Company,Email,Phone,Notes
+1616,11/1/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Patricia Field,,,609 Castle Ridge Rd,Suite 445,Austin,TX,78746,United States,Patty Jams,patty@pattyjams.com,9796665555,Needs the order by 11/3/2017
+1615,11/2/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Fernando Paulo,,,3801 Wilson,,Austin,TX,78704,United States,,paulof@gmail.com,5647775533,
+1614,11/2/2017,unfulfilled,87.1,Express,22.3,,,,iPhone 4S cover. Blue,I098a,39.8,1,4,M2 S1,Gerry Johns,,,600 California,,San Francisco,CA,94108,United States,,Gerry@example.com,8752223335,
+1617,11/1/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Patricia Field,,,609 Castle Ridge Rd,Suite 445,Austin,TX,78746,United States,Patty Jams,patty@pattyjams.com,9796665555,Needs the order by 11/3/2017
+1612,11/2/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Fernando Paulo,,,3801 Wilson,,Austin,TX,78704,United States,,paulof@gmail.com,5647775533,
+1618,11/2/2017,unfulfilled,87.1,Express,22.3,,,,iPhone 4S cover. Blue,I098a,39.8,1,4,M2 S1,Gerry Johns,,,600 California,,San Francisco,CA,94108,United States,,Gerry@example.com,8752223335,
+1619,11/1/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Patricia Field,,,609 Castle Ridge Rd,Suite 445,Austin,TX,78746,United States,Patty Jams,patty@pattyjams.com,9796665555,Needs the order by 11/3/2017
+1620,11/2/2017,pending,25,First Class,0,,,,Computer Mouse,C345,25,1,3,B2 S3,Fernando Paulo,,,3801 Wilson,,Austin,TX,78704,United States,,paulof@gmail.com,5647775533,
+1621,11/2/2017,unfulfilled,87.1,Express,22.3,,,,iPhone 4S cover. Blue,I098a,39.8,1,4,M2 S1,Gerry Johns,,,600 California,,San Francisco,CA,94108,United States,,Gerry@example.com,8752223335,
+
+
+Sr_No,Name,Company_Name,Address,Phone_Number,Email
+1,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+2,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+3,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+4,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+5,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+6,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+7,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+8,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+9,John Dolan,Doe Industries,712 Main Street Vancouver BC,604-555-1234,john.dolan@example.com
+

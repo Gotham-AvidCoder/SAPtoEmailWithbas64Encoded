@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record>
+<Header>
+<MESSAGE_ID>A564CVDF45DE7SQWEC</MESSAGE_ID>
+<SENDER_PARTY>TEST_ECC</SENDER_PARTY>
+<SENDER_SERVICE>SAPD101</SENDER_SERVICE>
+<INTERFACE>SI_ContentFiles_oa</INTERFACE>
+<INTERFACE_NAMESPACE>com.sap.pi.java.mapping</INTERFACE_NAMESPACE>
+<QUALITY_OF_SERVICE>EO</QUALITY_OF_SERVICE>
+<RECEIVER_PARTY>B2B_Ariba_T</RECEIVER_PARTY>
+<RECEIVER_SERVICE>AribaD101</RECEIVER_SERVICE>
+</Header>
+<Upload>
+  <File_Type>INVOICE</File_Type>
+	 <row>
+    <Invoice_Number>101</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>28/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 101 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>102</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>29/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 102 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.01</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>103</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>30/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 103 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.02</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>104</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>31/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 104 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.03</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>105</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>28/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 101 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>106</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>29/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 102 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.01</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>107</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>30/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 103 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.02</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>108</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>31/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 104 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000.03</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+  <row>
+    <Invoice_Number>109</Invoice_Number>
+    <Invoice_Date>18/07/2011</Invoice_Date>
+    <Due_Date>28/07/2009</Due_Date>
+    <Customer_Code>1</Customer_Code>
+    <Customer_Reference>Customer 101 Invoice</Customer_Reference>
+    <Line_Quantity>2</Line_Quantity>
+    <Line-Description>Invoice line 1</Line-Description>
+    <Line_Rate>2000</Line_Rate>
+    <Line_Charge_Type>Sale of goods</Line_Charge_Type>
+    <Line_Vat_Amount>0</Line_Vat_Amount>
+    <Line_Vat_Rate>0</Line_Vat_Rate>
+  </row>
+</Upload>
+<Upload>
+  <File_Type>PURCHASE_ORDER</File_Type>
+   <row>
+    <Order_Number>1616</Order_Number>
+    <Order_Date>11/1/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Patricia Field</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>609 Castle Ridge Rd</Address_Line_1>
+    <Address_Line_2>Suite 445</Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78746</Postal_Code>
+    <Country>United States</Country>
+    <Company>Patty Jams</Company>
+    <Email>patty@pattyjams.com</Email>
+    <Phone>9796665555</Phone>
+    <Notes>Needs the order by 11/3/2017</Notes>
+  </row>
+  <row>
+    <Order_Number>1615</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Fernando Paulo</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>3801 Wilson</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78704</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>paulof@gmail.com</Email>
+    <Phone>5647775533</Phone>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Order_Number>1614</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>unfulfilled</Status>
+    <Subtotal_Incl_Tax>87.1</Subtotal_Incl_Tax>
+    <Requested_Service>Express</Requested_Service>
+    <Shipping_Cost>22.3</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>iPhone 4S cover. Blue</Item_Name>
+    <Item_SKU>I098a</Item_SKU>
+    <Item_Unit_Price>39.8</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>4</Item_Unit_Weight>
+    <Warehouse_Location>M2 S1</Warehouse_Location>
+    <Full_Name>Gerry Johns</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>600 California</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>San Francisco</City>
+    <State>CA</State>
+    <Postal_Code>94108</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>Gerry@example.com</Email>
+    <Phone>8752223335</Phone>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Order_Number>1617</Order_Number>
+    <Order_Date>11/1/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Patricia Field</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>609 Castle Ridge Rd</Address_Line_1>
+    <Address_Line_2>Suite 445</Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78746</Postal_Code>
+    <Country>United States</Country>
+    <Company>Patty Jams</Company>
+    <Email>patty@pattyjams.com</Email>
+    <Phone>9796665555</Phone>
+    <Notes>Needs the order by 11/3/2017</Notes>
+  </row>
+  <row>
+    <Order_Number>1612</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Fernando Paulo</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>3801 Wilson</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78704</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>paulof@gmail.com</Email>
+    <Phone>5647775533</Phone>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Order_Number>1618</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>unfulfilled</Status>
+    <Subtotal_Incl_Tax>87.1</Subtotal_Incl_Tax>
+    <Requested_Service>Express</Requested_Service>
+    <Shipping_Cost>22.3</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>iPhone 4S cover. Blue</Item_Name>
+    <Item_SKU>I098a</Item_SKU>
+    <Item_Unit_Price>39.8</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>4</Item_Unit_Weight>
+    <Warehouse_Location>M2 S1</Warehouse_Location>
+    <Full_Name>Gerry Johns</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>600 California</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>San Francisco</City>
+    <State>CA</State>
+    <Postal_Code>94108</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>Gerry@example.com</Email>
+    <Phone>8752223335</Phone>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Order_Number>1619</Order_Number>
+    <Order_Date>11/1/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Patricia Field</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>609 Castle Ridge Rd</Address_Line_1>
+    <Address_Line_2>Suite 445</Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78746</Postal_Code>
+    <Country>United States</Country>
+    <Company>Patty Jams</Company>
+    <Email>patty@pattyjams.com</Email>
+    <Phone>9796665555</Phone>
+    <Notes>Needs the order by 11/3/2017</Notes>
+  </row>
+  <row>
+    <Order_Number>1620</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>pending</Status>
+    <Subtotal_Incl_Tax>25</Subtotal_Incl_Tax>
+    <Requested_Service>First Class</Requested_Service>
+    <Shipping_Cost>0</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>Computer Mouse</Item_Name>
+    <Item_SKU>C345</Item_SKU>
+    <Item_Unit_Price>25</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>3</Item_Unit_Weight>
+    <Warehouse_Location>B2 S3</Warehouse_Location>
+    <Full_Name>Fernando Paulo</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>3801 Wilson</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>Austin</City>
+    <State>TX</State>
+    <Postal_Code>78704</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>paulof@gmail.com</Email>
+    <Phone>5647775533</Phone>
+    <Notes></Notes>
+  </row>
+  <row>
+    <Order_Number>1621</Order_Number>
+    <Order_Date>11/2/2017</Order_Date>
+    <Status>unfulfilled</Status>
+    <Subtotal_Incl_Tax>87.1</Subtotal_Incl_Tax>
+    <Requested_Service>Express</Requested_Service>
+    <Shipping_Cost>22.3</Shipping_Cost>
+    <Custom_1></Custom_1>
+    <Custom_2></Custom_2>
+    <Custom_3></Custom_3>
+    <Item_Name>iPhone 4S cover. Blue</Item_Name>
+    <Item_SKU>I098a</Item_SKU>
+    <Item_Unit_Price>39.8</Item_Unit_Price>
+    <Item_Quantity>1</Item_Quantity>
+    <Item_Unit_Weight>4</Item_Unit_Weight>
+    <Warehouse_Location>M2 S1</Warehouse_Location>
+    <Full_Name>Gerry Johns</Full_Name>
+    <First_Name></First_Name>
+    <Last_Name></Last_Name>
+    <Address_Line_1>600 California</Address_Line_1>
+    <Address_Line_2></Address_Line_2>
+    <City>San Francisco</City>
+    <State>CA</State>
+    <Postal_Code>94108</Postal_Code>
+    <Country>United States</Country>
+    <Company></Company>
+    <Email>Gerry@example.com</Email>
+    <Phone>8752223335</Phone>
+    <Notes></Notes>
+  </row>
+</Upload>
+<Upload>
+  <File_Type>SALES_ORDER</File_Type>
+    <row>
+    <Sr_No>1</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>2</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>3</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>4</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>5</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>6</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>7</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>8</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>9</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+</Upload>
+</Record>
