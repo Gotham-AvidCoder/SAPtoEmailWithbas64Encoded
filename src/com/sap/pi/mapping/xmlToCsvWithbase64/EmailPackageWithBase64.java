@@ -7,8 +7,6 @@ import java.io.OutputStream;
 import java.io.StringWriter;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.Base64;
@@ -33,39 +31,15 @@ import org.xml.sax.SAXException;
 import com.sap.aii.mapping.api.*;
 
 
-
-
 public class EmailPackageWithBase64 extends AbstractTransformation{
 	
-	static String CRLF = "\r\n";
-	List<StringBuilder> csvFileList = new ArrayList<StringBuilder>();
-
-	public static void main(String[] args) throws Exception{
-		File stylesheet = new File("src/main/resources/style.xsl");
-        File xmlSource = new File("src/main/resources/Data_noBase64.xml");
-        StringWriter writer = new StringWriter();
-        String file[];
-
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder1 = factory.newDocumentBuilder();
-        Document document = builder1.parse(xmlSource);
-
-        StreamSource stylesource = new StreamSource(stylesheet);
-        Transformer transformer = TransformerFactory.newInstance()
-                .newTransformer(stylesource);
-        Source source = new DOMSource(document);
-        Result outputTarget = new StreamResult(new File("src/main/resources/x.csv"));
-        Result outputTarget2 = new StreamResult(writer);
-        transformer.transform(source, outputTarget2);
-        transformer.transform(source, outputTarget);
-        file = writer.toString().split(CRLF+CRLF);
-        System.out.println(file.length);
-        for (int i=2;i<file.length;i++) {
-        	String a = file[i].replaceFirst(CRLF, "");
-        	System.out.println(a);
-        }
-
-	}
+	String CRLF = "\r\n";
+	String boundary = "001a114bc6f2d60884056265dfdc";
+	String contentType = "multipart/mixed; boundary=\"" + boundary + "\"";
+	String mailContent = "Dear User," + CRLF + "PFA the required CSV files for the user" + CRLF + CRLF + CRLF
+			+ "Regards," + CRLF + "SAP PI team";
+	
+	StringBuilder emailBuilder = new StringBuilder();
 
 	@Override
 	public void transform(TransformationInput arg0, TransformationOutput arg1) throws StreamTransformationException {
@@ -73,9 +47,9 @@ public class EmailPackageWithBase64 extends AbstractTransformation{
 		OutputStream outputStream = arg1.getOutputPayload().getOutputStream();
 		File stylesheet = new File(getClass().getClassLoader().getResource("style.xsl").getFile());
         StringWriter csvWriter = new StringWriter();
+        Map<String, String> encodedCSVFileMap = new TreeMap<String, String>();
         String csvFileArray[];
         String fileName ;
-        Map<String, String> encodedCSVFileMap = new TreeMap<String, String>();
 		
 		DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 		
@@ -112,6 +86,25 @@ public class EmailPackageWithBase64 extends AbstractTransformation{
 	        	fileName = fileName + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss")) + ".csv";
 	        	encodedCSVFileMap.put(fileName, encodedCSVFile);
 	        }
+	        
+	        emailBuilder.append("ContentType: multipart/mixed; boundary=\"" + boundary + "\"" + CRLF + CRLF);
+			emailBuilder.append("--" + boundary + CRLF + "Content-Type: text/plain; charset=UTF-8" + CRLF
+					+ "Content-Disposition: inline" + CRLF + CRLF + mailContent + CRLF + CRLF);
+
+			for (int fileCount = 0; fileCount < encodedCSVFileMap.size(); fileCount++) {
+
+				emailBuilder.append("--" + contentType + CRLF + "Content-Type: text/csv; name=\""
+						+ encodedCSVFileMap.keySet().toArray()[fileCount] + "\"" + CRLF
+						+ "Content-Disposition: attachment; filename=\"" + encodedCSVFileMap.keySet().toArray()[fileCount] + "\""
+						+ CRLF + "Content-Transfer-Encoding: base64" + CRLF);
+
+				emailBuilder.append(encodedCSVFileMap.get(encodedCSVFileMap.keySet().toArray()[fileCount]) + CRLF + CRLF);
+			}
+
+			emailBuilder.append("--" + contentType + "--" + CRLF);
+			
+			outputStream.write(emailBuilder.toString().getBytes());
+			arg1.getOutputHeader().setContentType(contentType);
 			
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
