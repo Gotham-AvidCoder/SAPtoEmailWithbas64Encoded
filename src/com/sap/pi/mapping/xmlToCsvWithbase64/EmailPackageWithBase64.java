@@ -48,11 +48,17 @@ public class EmailPackageWithBase64 extends AbstractTransformation {
 		OutputStream outputStream = arg1.getOutputPayload().getOutputStream();
 
 		try {
-
+			getTrace().addInfo("Transforming XML to String and adding it to StringWriter Object");
 			transformXMLtoStringWriter(inputStream);
+			
+			getTrace().addInfo("Separating the csv files from the string writer and converting them into base64 encoded files." + CRLF + "adding the base64 encoded files to a MAp with filename as key");
+			
 			base64EncodeCSVFiles();
+			
+			getTrace().addInfo("Creating the mail MIME body with encoded csv files as attachments");
 			createEmailMIMEbodywithCSVFiles();
 
+			getTrace().addInfo("Writing the entire MIME content to the outputstream and setting the content type of the outputheader");
 			outputStream.write(emailBuilder.toString().getBytes());
 			arg1.getOutputHeader().setContentType(contentType);
 
