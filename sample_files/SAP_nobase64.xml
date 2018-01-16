@@ -11,6 +11,81 @@
 <RECEIVER_SERVICE>AribaD101</RECEIVER_SERVICE>
 </Header>
 <Upload>
+  <File_Type>SALES_ORDER</File_Type>
+    <row>
+    <Sr_No>1</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>2</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>3</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>4</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>5</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>6</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>7</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>8</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>9</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+</Upload>
+<Upload>
   <File_Type>INVOICE</File_Type>
 	 <row>
     <Invoice_Number>101</Invoice_Number>

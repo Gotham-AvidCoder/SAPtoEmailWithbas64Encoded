@@ -41,6 +41,25 @@ public class EmailPackageWithBase64 extends AbstractTransformation {
 	StringWriter csvWriter = new StringWriter();
 	StringBuilder emailBuilder = new StringBuilder();
 	Map<String, String> encodedCSVFileMap = new TreeMap<String, String>();
+	
+	public static void main(String args[]) throws ParserConfigurationException, SAXException, IOException, TransformerFactoryConfigurationError, TransformerException {
+		File xmlFile = new File("sample_files/SAP_nobase64.xml");
+		File xslFile = new File("sample_files/style_1.xsl");
+		
+		DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+
+		DocumentBuilder builder = builderFactory.newDocumentBuilder();
+		Document document = builder.parse(xmlFile);
+
+		StreamSource stylesource = new StreamSource(xslFile);
+		Transformer transformer = TransformerFactory.newInstance().newTransformer(stylesource);
+		Source source = new DOMSource(document);
+		Result outputTarget = new StreamResult(new File("sample_files/test_file.csv"));
+		transformer.transform(source, outputTarget);
+		System.out.println("done");
+		
+		
+	}
 
 	@Override
 	public void transform(TransformationInput arg0, TransformationOutput arg1) throws StreamTransformationException {
@@ -51,7 +70,7 @@ public class EmailPackageWithBase64 extends AbstractTransformation {
 			getTrace().addInfo("Transforming XML to String and adding it to StringWriter Object");
 			transformXMLtoStringWriter(inputStream);
 			
-			getTrace().addInfo("Separating the csv files from the string writer and converting them into base64 encoded files." + CRLF + "adding the base64 encoded files to a MAp with filename as key");
+			getTrace().addInfo("Separating the csv files from the string writer and converting them into base64 encoded files." + CRLF + "adding the base64 encoded files to a Map with filename as key");
 			
 			base64EncodeCSVFiles();
 			
@@ -102,22 +121,22 @@ public class EmailPackageWithBase64 extends AbstractTransformation {
 		String fileName;
 
 		csvFileArray = csvWriter.toString().split(CRLF + CRLF);
-		for (int fileCount = 2; fileCount < csvFileArray.length; fileCount++) {
+		for (int fileCount = 1; fileCount < csvFileArray.length; fileCount++) {
 			String csvFile = csvFileArray[fileCount].replaceFirst(CRLF, "");
+			char fileType = csvFile.charAt(0);
 			String encodedCSVFile = Base64.getEncoder().encodeToString(csvFile.getBytes());
-			switch (fileCount) {
-			case 2:
-				fileName = "Invoice_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"))
-						+ ".csv";
+			switch (fileType) {
+			case 'I':
+				fileName = "Invoice_";
 				break;
-			case 3:
-				fileName = "Purchase_Order_";
+			case 'O':
+				fileName = "Purchase-Order_";
 				break;
-			case 4:
-				fileName = "Sales_Order_";
+			case 'S':
+				fileName = "Sales-Order_";
 				break;
 			default:
-				fileName = "-null-";
+				fileName = null;
 				break;
 			}
 
