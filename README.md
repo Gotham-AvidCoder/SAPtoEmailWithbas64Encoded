@@ -1,5 +1,5 @@
-# SAP PI Java Mapping - Attachments 3
-Convert Invoice, purchase order and sales order into base 64 to be sent in a mail
+# Conversion of XML file containing invoice, purchase order and sales order files into csv files and creation of Email-MIME body with base64 encoded zip files
+	SAP ECC --> SAP PI --> Email Client
 
 1.  Read the xml document from the inputstream.
 2.  Use XSLT stylesheet to extract and convert records from xml into csv String.
