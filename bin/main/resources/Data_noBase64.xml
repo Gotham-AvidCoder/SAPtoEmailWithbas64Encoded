@@ -10,8 +10,84 @@
 <RECEIVER_PARTY>B2B_Ariba_T</RECEIVER_PARTY>
 <RECEIVER_SERVICE>AribaD101</RECEIVER_SERVICE>
 </Header>
-<Upload file_type="INVOICE">
-	<row>
+<Upload>
+  <File_Type>SALES_ORDER</File_Type>
+    <row>
+    <Sr_No>1</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>2</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>3</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>4</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>5</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>6</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>7</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>8</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+  <row>
+    <Sr_No>9</Sr_No>
+    <Name>John Dolan</Name>
+    <Company_Name>Doe Industries</Company_Name>
+    <Address>712 Main Street Vancouver BC</Address>
+    <Phone_Number>604-555-1234</Phone_Number>
+    <Email>john.dolan@example.com</Email>
+  </row>
+</Upload>
+<Upload>
+  <File_Type>INVOICE</File_Type>
+	 <row>
     <Invoice_Number>101</Invoice_Number>
     <Invoice_Date>18/07/2011</Invoice_Date>
     <Due_Date>28/07/2009</Due_Date>
@@ -129,7 +205,8 @@
     <Line_Vat_Rate>0</Line_Vat_Rate>
   </row>
 </Upload>
-<Upload file_type="PURCHASE_ORDER">
+<Upload>
+  <File_Type>PURCHASE_ORDER</File_Type>
    <row>
     <Order_Number>1616</Order_Number>
     <Order_Date>11/1/2017</Order_Date>
@@ -401,7 +478,8 @@
     <Notes></Notes>
   </row>
 </Upload>
-<Upload file_type="SALES_ORDER">
+<Upload>
+  <File_Type>SALES_ORDER</File_Type>
     <row>
     <Sr_No>1</Sr_No>
     <Name>John Dolan</Name>

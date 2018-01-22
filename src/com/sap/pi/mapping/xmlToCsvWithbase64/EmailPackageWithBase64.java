@@ -240,7 +240,8 @@ public class EmailPackageWithBase64 extends AbstractTransformation {
 		String base64PurchaseZip = Base64.getMimeEncoder().encodeToString(pobaos.toByteArray());
 		String base64SalesZip = Base64.getMimeEncoder().encodeToString(sobaos.toByteArray());
 
-		base64ZipFileMap.put("Invoice_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")) + ".zip",
+		base64ZipFileMap.put(
+				"Invoice_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")) + ".zip",
 				base64InvoiceZip);
 		base64ZipFileMap.put(
 				"Purchase-Order_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")) + ".zip",
